@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B33F6F1B-D7B1-45E7-9DCB-6235D3642E26}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SHSchool.Data</RootNamespace>
+    <AssemblyName>SHSchool.Data</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>%24/ischoolteam/ischool_AbstractLayers/SHSchool.Data</SccProjectName>
+    <SccLocalPath>.</SccLocalPath>
+    <SccAuxPath>http://tfserver.ischool.com.tw:8080/tfs/tfs2008</SccAuxPath>
+    <SccProvider>{4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\SHSchool.Data.xml</DocumentationFile>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FISCA.Authentication, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Desktop\ischool desktop\kernel\FISCA.Authentication.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="FISCA.Data, Version=1.0.0.2, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Desktop\ischool desktop\kernel\FISCA.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="FISCA.DSAUtil, Version=3.2.21.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Desktop\ischool desktop\kernel\FISCA.DSAUtil.dll</HintPath>
+    </Reference>
+    <Reference Include="K12.Data">
+      <HintPath>..\..\Desktop\ischool desktop\modules\JHCore\K12.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Behavior\Morality.cs" />
+    <Compile Include="Behavior\MoralityRecord.cs" />
+    <Compile Include="Behavior\SHDiscipline.cs" />
+    <Compile Include="Behavior\SHDisciplineRecord.cs" />
+    <Compile Include="Behavior\SHAbsenceMapping.cs" />
+    <Compile Include="Behavior\SHAbsenceMappingInfo.cs" />
+    <Compile Include="Behavior\SHMeritDemeritReduce.cs" />
+    <Compile Include="Behavior\SHMeritDemeritReduceRecord.cs" />
+    <Compile Include="Behavior\SHPeriodMapping.cs" />
+    <Compile Include="Behavior\SHPeriodMappingInfo.cs" />
+    <Compile Include="Behavior\SHAttendance.cs" />
+    <Compile Include="Behavior\SHAttendanceRecord.cs" />
+    <Compile Include="Behavior\SHDemerit.cs" />
+    <Compile Include="Behavior\SHDemeritRecord.cs" />
+    <Compile Include="Behavior\SHMerit.cs" />
+    <Compile Include="Behavior\SHMeritRecord.cs" />
+    <Compile Include="Evaluation\SHChineseEnglishSubjectMapping.cs" />
+    <Compile Include="Evaluation\SHGradScore.cs" />
+    <Compile Include="Evaluation\SHGradScoreRecord.cs" />
+    <Compile Include="Evaluation\SHMoralScoreCalcRule.cs" />
+    <Compile Include="Evaluation\SHSchoolYearEntryScore.cs" />
+    <Compile Include="Evaluation\SHSchoolYearEntryScoreRecord.cs" />
+    <Compile Include="Evaluation\SHSchoolYearScore.cs" />
+    <Compile Include="Evaluation\SHSchoolYearScoreRecord.cs" />
+    <Compile Include="Evaluation\SHSemesterEntryScore.cs" />
+    <Compile Include="Evaluation\SHSemesterEntryScoreRecord.cs" />
+    <Compile Include="Evaluation\SHSubjectTable.cs" />
+    <Compile Include="Evaluation\SHSubjectTableRecord.cs" />
+    <Compile Include="Permrec\SHBeforeEnrollment.cs" />
+    <Compile Include="Permrec\SHBeforeEnrollmentRecord.cs" />
+    <Compile Include="Permrec\SHPermrecStatusMapping.cs" />
+    <Compile Include="Permrec\SHPermrecStatusMappingInfo.cs" />
+    <Compile Include="Permrec\SHUpdateRecord.cs" />
+    <Compile Include="Permrec\SHUpdateRecordBatch.cs" />
+    <Compile Include="Permrec\SHUpdateRecordBatchRecord.cs" />
+    <Compile Include="Permrec\SHUpdateCodeMapping.cs" />
+    <Compile Include="Permrec\SHUpdateCodeMappingInfo.cs" />
+    <Compile Include="Permrec\SHUpdateRecordRecord.cs" />
+    <Compile Include="SHClassTag.cs" />
+    <Compile Include="SHClassTagRecord.cs" />
+    <Compile Include="SHCourseTag.cs" />
+    <Compile Include="SHCourseTagRecord.cs" />
+    <Compile Include="Evaluation\SHRankingInfo.cs" />
+    <Compile Include="Evaluation\SHMoralScoreCalcRuleRecord.cs" />
+    <Compile Include="SHSchoolInfo.cs" />
+    <Compile Include="SHStudentTag.cs" />
+    <Compile Include="SHStudentTagRecord.cs" />
+    <Compile Include="SHTagConfig.cs" />
+    <Compile Include="SHTagConfigRecord.cs" />
+    <Compile Include="SHTeacherTag.cs" />
+    <Compile Include="SHTeacherTagRecord.cs" />
+    <Compile Include="Permrec\SHAddress.cs" />
+    <Compile Include="Permrec\SHAddressRecord.cs" />
+    <Compile Include="Permrec\SHLeaveIfno.cs" />
+    <Compile Include="Permrec\SHLeaveInfoRecord.cs" />
+    <Compile Include="Permrec\SHParent.cs" />
+    <Compile Include="Permrec\SHParentRecord.cs" />
+    <Compile Include="Permrec\SHPhone.cs" />
+    <Compile Include="Permrec\SHPhoneRecord.cs" />
+    <Compile Include="Evaluation\SHScoreCalcRule.cs" />
+    <Compile Include="Evaluation\SHScoreCalcRuleRecord.cs" />
+    <Compile Include="Evaluation\SHAEInclude.cs" />
+    <Compile Include="Evaluation\SHAEIncludeRecord.cs" />
+    <Compile Include="Evaluation\SHAssessmentSetup.cs" />
+    <Compile Include="Evaluation\SHAssessmentSetupRecord.cs" />
+    <Compile Include="Evaluation\SHExam.cs" />
+    <Compile Include="Evaluation\SHExamRecord.cs" />
+    <Compile Include="Evaluation\SHMoralScore.cs" />
+    <Compile Include="Evaluation\SHProgramPlan.cs" />
+    <Compile Include="Evaluation\SHProgramPlanRecord.cs" />
+    <Compile Include="Evaluation\SHSCAttend.cs" />
+    <Compile Include="Evaluation\SHSCETake.cs" />
+    <Compile Include="Evaluation\SHSCETakeRecord.cs" />
+    <Compile Include="Evaluation\SHSemesterScore.cs" />
+    <Compile Include="Evaluation\SHSemesterScoreRecord.cs" />
+    <Compile Include="Evaluation\SHTCInstruct.cs" />
+    <Compile Include="Evaluation\SHTCInstructRecord.cs" />
+    <Compile Include="SHClass.cs" />
+    <Compile Include="SHCourse.cs" />
+    <Compile Include="SHCourseRecord.cs" />
+    <Compile Include="SHClassRecord.cs" />
+    <Compile Include="SHDepartment.cs" />
+    <Compile Include="SHDepartmentRecord.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Evaluation\SHMoralScoreRecord.cs" />
+    <Compile Include="Evaluation\SHSCAttendRecord.cs" />
+    <Compile Include="SHSemesterHistory.cs" />
+    <Compile Include="SHSemesterHistoryRecord.cs" />
+    <Compile Include="SHStudent.cs" />
+    <Compile Include="SHStudentRecord.cs" />
+    <Compile Include="SHTeacher.cs" />
+    <Compile Include="SHTeacherRecord.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
