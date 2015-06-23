@@ -425,5 +425,102 @@ namespace SHSchool.Data
                 return MappingInfo == null ? string.Empty : MappingInfo.Type;
             }
         }
+
+        /// <summary>
+        /// 借讀學校代碼(借讀名冊)。
+        /// </summary>
+        [Field(Caption = "借讀學校代碼", EntityName = "UpdateRecord", EntityCaption = "異動", Remark = "借讀學校代碼(借讀名冊)")]
+        public string Code7SchoolCode
+        {
+            get
+            {
+                return base.Attributes["Code7SchoolCode"];
+            }
+            set
+            {
+                base.Attributes["Code7SchoolCode"] = value;
+            }
+        }
+
+        /// <summary>
+        /// 借讀科別代碼(借讀名冊)。
+        /// </summary>
+        [Field(Caption = "借讀科別代碼", EntityName = "UpdateRecord", EntityCaption = "異動", Remark = "借讀科別代碼(借讀名冊)")]
+        public string Code7DeptCode
+        {
+            get
+            {
+                return base.Attributes["Code7DeptCode"];
+            }
+            set
+            {
+                base.Attributes["Code7DeptCode"] = value;
+            }
+        }
+
+        /// <summary>
+        /// 借讀申請開始日期(借讀名冊)。
+        /// </summary>
+        [Field(Caption = "借讀申請開始日期", EntityName = "UpdateRecord", EntityCaption = "異動", Remark = "借讀申請開始日期(借讀名冊)")]
+        public string Code71BeginDate
+        {
+            get
+            {
+                return base.Attributes["Code71BeginDate"];
+            }
+            set
+            {
+                base.Attributes["Code71BeginDate"] = value;
+            }
+        }
+
+        /// <summary>
+        /// 借讀申請結束日期(借讀名冊)。
+        /// </summary>
+        [Field(Caption = "借讀申請結束日期", EntityName = "UpdateRecord", EntityCaption = "異動", Remark = "借讀申請結束日期(借讀名冊)")]
+        public string Code71EndDate
+        {
+            get
+            {
+                return base.Attributes["Code71EndDate"];
+            }
+            set
+            {
+                base.Attributes["Code71EndDate"] = value;
+            }
+        }
+
+        /// <summary>
+        /// 借讀實際開始日期(借讀名冊)。
+        /// </summary>
+        [Field(Caption = "借讀實際開始日期", EntityName = "UpdateRecord", EntityCaption = "異動", Remark = "借讀實際開始日期(借讀名冊)")]
+        public string Code72BeginDate
+        {
+            get
+            {
+                return base.Attributes["Code72BeginDate"];
+            }
+            set
+            {
+                base.Attributes["Code72BeginDate"] = value;
+            }
+        }
+
+        /// <summary>
+        /// 借讀實際結束日期(借讀名冊)。
+        /// </summary>
+        [Field(Caption = "借讀實際結束日期", EntityName = "UpdateRecord", EntityCaption = "異動", Remark = "借讀實際結束日期(借讀名冊)")]
+        public string Code72EndDate
+        {
+            get
+            {
+                return base.Attributes["Code72EndDate"];
+            }
+            set
+            {
+                base.Attributes["Code72EndDate"] = value;
+            }
+        }
+
     }
 }
