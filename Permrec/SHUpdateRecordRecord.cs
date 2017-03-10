@@ -522,5 +522,21 @@ namespace SHSchool.Data
             }
         }
 
+        /// <summary>
+        /// 雙重學籍編號。
+        /// </summary>
+        [Field(Caption = "雙重學籍編號", EntityName = "UpdateRecord", EntityCaption = "異動", Remark = "雙重學籍編號")]
+        public string ReplicatedSchoolRollNumber
+        {
+            get
+            {
+                return base.Attributes["ReplicatedSchoolRollNumber"];
+            }
+            set
+            {
+                base.Attributes["ReplicatedSchoolRollNumber"] = value;
+            }
+        }
+
     }
 }
